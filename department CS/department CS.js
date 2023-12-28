@@ -29,10 +29,6 @@ const en = [
 
 
 
- var div1=document.createElement("tr")
- const tel =document.createTextNode("72 246 535")
- div1.appendChild(tel)
- document.getElementById("ent2").appendChild(div1)
 
 
 
@@ -52,9 +48,11 @@ function ajouterentre(e){
 
 function supprimerentre(e){
     const index =en.indexOf(e, 0);
-    if (index > -1) {
-        en.splice(index, 1);
+    var row = document.getElementsByClassName("trr")[index + 1]
+    if (row) {
+        row.remove();
     }
+    
 }
 
 function modifierentr(e) { 

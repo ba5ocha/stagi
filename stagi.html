@@ -4,37 +4,71 @@
     <meta charset="UTF-8">
     <title>Stagi</title>
     <link rel="stylesheet" href="stagi.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
-    <nav>
-        <label class="logo">Stagi</label>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Category</a>
-            <ul>
-                <li><a href="department CS/department CS.html">Department of Computer Science</a></li>
-                <li><a href="#">Department of Mechanical</a></li>
-                <li><a href="#">Department of Mechanical</a></li>
-                <li><a href="#">Department of civil Engineering</a></li>
-                
-            </ul></li>
-            <li><a href="#">Contact</a></li>
-            <li class="menu">
-                <form action="/search" method="get" class="search-bar">
-                    <label for="search">Search:</label>
-                    <input type="search" id="search" name="q" placeholder="Enter your search term">
-                    <button type="submit" onclick="">Search</button>
+    <header class="header" class="content">
+        <a href="#" class="logo">Stagi.</a>
+        <nav class="navbar">
+        
+            <a href="#">Home</a>
+            <a href="#cat">Categories</a>
+       
+        </nav>
+
+        <div class="social-media">
+            <a href="https://twitter.com/BahiChayma"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com/chayma.bahi.02"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/08_chachaa/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+    </header>
+    
+    <section class="home" class="content">
+        <div class="home-content">
+        <h1> Find Your Internship Here.</h1>
+        <h3><b>Our Goal! </b></h3>
+        <p>We serve as platforms connecting students or individuals seeking work 
+            experience with companies offering internships.
+        </p>
+                <form class="search-bar" name = "f">
+                    <label for="search"></label>
+                    <input type="text" id="search" name ="T1" placeholder="Enter your search term">
+                    <button onclick="verif()">Search</button>
                 </form>
-            </li>
-        </ul>
-    </nav>
-<h2> THE OPPERTUNITIES OF INTERNSHIP </h2>
-
-<div id="departments"></div>
+        </div>
+        <div class="rhombus2"></div>
+    </section>
 
 
+    <section class="home2" class="content"> <br>
+        <h1 >We Are .. </h1><br>
+       <table style="border-collapse: collapse;border-style:hidden;">
+        <tr><th><img class="imgweare" src="https://i.pinimg.com/564x/45/d7/9f/45d79fb0fb559d6fad3d4b9aa2470756.jpg"></th>
+            <th>Welcome to OurInternshipHub, where opportunities meet ambition. <br>
+                Our platform is designed to connect aspiring talents with dynamic internship experiences.
+                 Founded on the belief that meaningful internships propel careers, we curate diverse opportunities across industries. 
+                 Whether you're charting your career path or seeking valuable industry exposure, OurInternshipHub is your gateway to a world of possibilities. 
+                 Join us in shaping futures and unlocking your full potential through immersive and enriching internship experiences</th>
+        </tr>
+        
+       </table>
+    </section>
+    <br><br>
+    <h1 id="cat">Categories</h1>
+    <div id="departments"></div>
+
+
+ 
+
+
+
+
+
+        
+       
 
     <script src="stagi.js"></script>
 </body>

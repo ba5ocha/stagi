@@ -13,9 +13,8 @@ nav {
     height: 80px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 50px;
 }
 label.logo {
     color: white;
@@ -24,7 +23,7 @@ label.logo {
     margin-left: 80px;
 }
 table, th, td {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
   }
 tr , td{
