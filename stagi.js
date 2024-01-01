@@ -15,6 +15,7 @@ div2.innerHTML="<img id ='img' src = " + department[0] + " onclick='toggleImage(
 div.appendChild(div2)
 
 
+
 function toggleImage(img) {
   
   var currentelement = department.indexOf(img.src);
@@ -24,6 +25,8 @@ function toggleImage(img) {
   img.src = department[nextelement];
 
 }
+/*setTimeout(toggleImage,2000);*/
+
 
 
  function verif (){
@@ -33,13 +36,29 @@ function toggleImage(img) {
     return false;
   }
   else if((sear ==="computerscience" )||(sear ==="computer science") || (sear ==="computer")){
-    window.open("department CS/department CS.html");
+    window.open("dep cs/department CS.html");
+  }
+  else if((sear==="mechanical")||(sear==="mechanical engineering")||(sear==="mecanique")){
+    window.open("dep mec/department M.html");
+  }
+  else if((sear==="Electrical")||(sear==="Electrical engineering")||(sear==="electrique")){
+    window.open("dep mec/department M.html");
   }
   else{
-    alert("wait for the update")
+    alert("wait for the next update")
     return false;
   }
 }
+/*function space() {
+  var s = document.getElementById("space");
+  var div = document.createElement("div");
+  for (let i = 0; i < 300; i++) {
+    div.innerHTML += '&nbsp;';
+  }
+  s.appendChild(div);
+}
+
+window.onload = space;*/
 
 
  

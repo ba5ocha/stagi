@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Georgia, serif;
+    background: #eaeaea;
+}
+
+
+nav {
+    background: #1743e3;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+label.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 80px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    
+    color: #f5f5f5;
+    text-align: center;
+    background-color: #1743e3;
+}
+
+.NET-INFO {
+    height: 60px;
+    width: auto;
+}
+
+td {
+    max-width: 500px;
+    align-items: center;
+}
+
+.trr:hover {
+    background-color: #f5f5f5;
+}
+.search-bar label {
+    color: black;
+    padding: 50px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 8px 22px;
+    background-color: #0e7cf4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5%;
+    font-family: Georgia, serif;
+}
+
+.search-bar button:hover {
+    background-color: #0962ea;
+}
