@@ -39,5 +39,3 @@ function edit() {
     tableEdit.rows[index].cells[2].innerHTML = editedDesc;
     console.log(editedDesc)
 }
-
-

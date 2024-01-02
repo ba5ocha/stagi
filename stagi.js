@@ -27,6 +27,9 @@ function toggleImage(img) {
 }
 /*setTimeout(toggleImage,2000);*/
 
+var IT=["computerscience","computer science","computer"];
+var Mec=["mechanical","mechanical engineering","mecanique"];
+var Elec=["electrical","electrical engineering","electrique"];
 
 
  function verif (){
@@ -35,19 +38,18 @@ function toggleImage(img) {
     alert(" invalide input !!");
     return false;
   }
-  else if((sear ==="computerscience" )||(sear ==="computer science") || (sear ==="computer")){
-    window.open("dep cs/department CS.html");
+  else if(IT.includes(sear)){
+    window.open("dep cs/department CS.html")
   }
-  else if((sear==="mechanical")||(sear==="mechanical engineering")||(sear==="mecanique")){
-    window.open("dep mec/department M.html");
+  else if(Mec.includes(sear)){
+    window.open("dep mec/department M.html")
   }
-  else if((sear==="Electrical")||(sear==="Electrical engineering")||(sear==="electrique")){
-    window.open("dep mec/department M.html");
+  else if(Elec.includes(sear)){
+    window.open("dep elec/department E.html")
   }
   else{
-    alert("wait for the next update")
-    return false;
-  }
+    alert("wait for the next update :* ")
+  } 
 }
 /*function space() {
   var s = document.getElementById("space");
@@ -56,9 +58,9 @@ function toggleImage(img) {
     div.innerHTML += '&nbsp;';
   }
   s.appendChild(div);
-}
+}*/
 
-window.onload = space;*/
+/*window.onload = space;*/
 
 
  
